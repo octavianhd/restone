@@ -1,0 +1,560 @@
+/*----------------------------------------------
+
+    Developed by Octavian Mos 2015
+    octavianhd@gmail.com
+
+-----------------------------------------------*/
+/*----------------------------------------------
+
+    Table of content:
+
+    #Main;
+    #Header;
+    #Navigation;
+    #Dishes section:
+    	#Fish;
+    	#Meat;
+		#Salads;
+		#Desserts;
+    #Quotes section;
+    #Feature section;
+    #Feature parallax section;
+    #Action section;
+    #Footer;
+    #Scroll Up;
+    #Responsive.
+
+-----------------------------------------------*/
+
+/*---------------------------Main-----------------------------*/
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: verdana,sans-serif;
+	font-size: normal;
+	margin: 0;
+}
+
+p{
+	text-indent: 20px;
+}
+ul{
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+a,button {
+	transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+}
+a:hover,a:focus{
+	text-decoration: none;
+}
+
+/*-------------------Header------------------------------*/
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../pics/header-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	text-align: center;
+	color: #fff;
+}
+header h3{
+	float: left;
+	font-size: 34px;
+	font-weight: 800;
+	padding: 0 10px;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+#headerDiv{
+	margin-top: 320px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+#headerDiv h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  text-shadow: 5px 5px 10px #888888,1px 1px 3px #fff;
+  
+}
+#headerDiv p{
+	font-size: 20px;
+}
+.like-btn{
+	background-color: #414141;
+	color: #fff;
+	letter-spacing: 4px;
+	margin-top: 20px;
+
+}
+.like-btn:hover{
+	background-color: #eeeeee;
+	box-shadow: 5px 5px 10px #888888;
+}
+#logo {
+	font-family: "Brusher";
+	font-size: 44px;
+}
+
+/*--------------------------Navigation------------------------*/
+
+.navi{
+	padding: 30px 20px;
+	float: right;
+}
+.navi ul{
+	margin: 0;
+}
+.navi li a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 20px 20px;
+}
+.navi li a:hover{
+	color: #171717;
+	text-shadow: 3px 3px 5px #888888,1px 1px 1px #fff;
+}
+
+/*-----------------------Dishes section---------------------*/
+
+#dishes{
+	margin: 0;
+	text-align: center;
+}
+#dishes h2{
+	font-weight: 600;
+	color: #000;
+	text-shadow: 3px 3px 5px #888888,1px 1px 3px #fff;
+	padding: 40px 0;
+}
+.tabie li a{
+	font-size: 16px;
+	font-weight: 600;
+	color: #888888;
+	text-transform: uppercase;
+}
+.tabie li a:hover{
+	color: #000;
+}
+
+/*--------------------Fish--------------------*/
+
+#dishes-meat li p,#dishes-fish li p,#dishes-salads li p,#dishes-desserts li p{
+	padding-top: 180px; 
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px #888888,1px 1px 1px #000;
+}
+#dishes-fish li{
+	width: 280px;
+	height: 270px;
+	padding: 20px 0;
+	margin: 40px 0;
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-eel.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-eel.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-eel.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-eel.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-fish li:nth-of-type(2){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-shrimps.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-shrimps.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-shrimps.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-shrimps.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-fish li:nth-of-type(3){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-salmon.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-salmon.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-salmon.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-salmon.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-fish li:nth-of-type(4){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-sushi.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-sushi.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-sushi.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/fish-sushi.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*----------------Meat-----------------------*/
+
+#dishes-meat li {
+	width: 280px;
+	height: 270px;
+	padding: 20px 0;
+	margin: 40px 0;
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_burger.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_burger.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_burger.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_burger.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-meat  li:nth-of-type(2){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_steak.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_steak.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_steak.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_steak.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-meat  li:nth-of-type(3){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pasta.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pasta.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pasta.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pasta.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-meat  li:nth-of-type(4){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pizza.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pizza.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pizza.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/meat_pizza.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*----------------------Salads---------------------*/
+
+#dishes-salads li{
+	width: 280px;
+	height: 270px;
+	padding: 20px 0;
+	margin: 40px 0;
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_potatoes.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_potatoes.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_potatoes.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_potatoes.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-salads li:nth-of-type(2){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_thai.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_thai.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_thai.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_thai.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-salads li:nth-of-type(3){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_fresh.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_fresh.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_fresh.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_fresh.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-salads li:nth-of-type(4){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_summer.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_summer.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_summer.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/salads_summer.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*-----------------Desserts----------------------------*/
+
+#dishes-desserts li{
+	width: 280px;
+	height: 270px;
+	padding: 20px 0;
+	margin: 40px 0;
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_choco.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_choco.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_choco.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_choco.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-desserts li:nth-of-type(2){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_banana.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_banana.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_banana.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_banana.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-desserts li:nth-of-type(3){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_cheese.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_cheese.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_cheese.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_cheese.jpg) no-repeat center center;
+	background-size: cover;
+}
+#dishes-desserts li:nth-of-type(4){
+	background: -webkit-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_ice.jpg) no-repeat center center;
+	background: -o-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_ice.jpg) no-repeat center center;
+	background: -moz-linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_ice.jpg) no-repeat center center;
+	background: linear-gradient(rgba(65,65,65,0),rgba(65,65,65,1)), url(../pics/dishes/desserts_ice.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*--------------------------------Quotes section-------------------------*/
+
+#quotes{
+	width: 100%;
+	height: 400px;
+	background: url(../pics/quotes-image.jpg) no-repeat;
+	background-size: cover;
+}
+#quotes p{
+	margin-top: 320px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #000;
+	text-align: center;
+}
+#quotes small{
+	text-align: right;
+}
+
+/*-------------------------------Features section------------------------*/
+
+#features{
+	width: 100%;
+	height: 400px;
+	background: url(../pics/feature-image.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#features h2{
+	color: #fff;
+	font-weight: 600;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+#icon-bar{
+	margin-top: 120px;
+}
+#icon-bar img{
+	position: relative;
+	width: 50px;
+	height: 55px; 
+	margin: 20px 30px;
+}
+
+#icon-bar ul li p{
+	text-align: center;
+	text-indent: 0;
+	color: #ffad33;
+}
+
+/*--------------------------Feature parallax section---------------------*/
+
+#feature-para{
+	width: 100%;
+	height: 400px;
+	background-image: url(../pics/feature-para.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#feature-para h2{
+	float: right;
+	margin-top: 300px;
+	margin-right: 100px;
+	color: #fff;
+	font-weight: 600;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+
+/*-------------------------------Action section-------------------------------*/
+
+#action{
+	width: 100%;
+	height: 400px;
+	background: url(../pics/action-image.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#action-call{
+	width: 40%;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 30%;
+	padding: 50px 0;
+	background-color: #414141;
+	color: #fff;
+	font-size: 16px;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px #000;
+	text-align: center;
+}
+#action-call h1{
+	font-family: "Brusher";
+	color: #fff;
+	text-align: center;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px #000;
+}
+
+/*-------------------------------Footer-------------------------------*/
+
+footer {
+	padding: 20px 0;
+	background-color: #414141;
+}
+footer h3{
+	text-align: center;
+	font-size: 34px;
+	color: #fff;
+	font-weight: 800;
+	padding: 0;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+footer p{
+	color: #000;
+}
+
+/*-------------------------Scroll Up------------------------*/
+
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: url(../pics/top.png) no-repeat;
+	opacity: 0.5;
+}
+#scrollUp:hover {
+	opacity: 1;
+}
+
+/*-------------------------Responsive------------------------*/
+
+@media(max-width: 768px){
+	header{
+		width: 100%;
+		height: 350px;
+	}
+	header h2{
+		font-size: 16px;
+		font-weight: 600;
+		padding: 10px 0;
+		text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+	}
+	.navi ul{
+		padding:0 ;
+	}
+	.navi li{
+		padding: 0;
+	}
+	.navi li a{
+		font-size: 16px;
+		font-weight: 400;
+		padding: 0 10px;
+	}
+	.main-btn{
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		margin-top: 50px;
+	}
+	#header, #dishes, #quotes,#features,#action, #footer{
+		font-size: 12px;
+		display: flex;
+	}
+	#headerDiv{
+		margin-top: 40px;
+	}
+	#headerDiv p{
+		font-size: 12px;
+	}
+	#headerDiv h2{
+		font-size: 20px;
+	}
+	#dishes h2{
+		font-size: 20px;
+		position: flex;
+	}
+	.nav li a{
+		font-size: 12px;
+	}
+	#dishes-meat ul,#dishes-fish ul,#dishes-salads ul,#dishes-desserts ul{
+		margin: 0;
+		list-style: inherit;
+	}
+
+	#dishes-meat li p,#dishes-fish li p,#dishes-salads li p,#dishes-desserts li p{
+		margin: 0;
+		padding-top: 60px; 
+		font-size: 12px;
+		display: flex;
+	}
+	#dishes-meat li, #dishes-fish li, #dishes-salads li, #dishes-desserts li{
+		width: 100px;
+		height: 100px;
+		margin: 0;
+		padding: 0;
+		list-style-type: inherit;
+		display: flex;
+	}
+	#quotes{
+		height: 200px;
+	}
+	#quotes p{
+		margin-top: 140px;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	#features{
+		height: 200px;
+	}
+	#features h2{
+		font-size: 16px;
+		font-weight: 400;
+	}
+	#icon-bar{
+		margin-top: 40px;
+	}
+	#icon-bar img{
+		position: relative;
+		width: 15px;
+		height: 15px; 
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	#icon-bar p{
+		font-size: 8px;
+		display: flex;
+	}
+	#feature-para{
+		height: 200px;
+	}
+	#feature-para h2{
+		margin-top: 160px;
+		margin-right: 50px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	#action{
+		height: 200px;
+		text-align: center;
+	}
+	#action-call{
+		height: 100px;
+		width: 200px;
+		margin-top: 25%;
+		margin-left: 0;
+		padding: 10px 10px;
+		font-size: 12px;
+		text-align: center;
+	}
+	#action-call h1{
+		font-size: 20px;
+	}
+	.social{
+		text-align: center;
+	}
+	.social ul li a{
+		font-size: 16px;
+	}
+	footer p{
+		font-size: 10px;
+	}	
+}
